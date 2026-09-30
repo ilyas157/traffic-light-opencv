@@ -1,5 +1,15 @@
-# Détection de Feux de Signalisation
+# Détection de feux de signalisation par vision classique
 
+Détection et reconnaissance de l'état (rouge / vert) de feux de signalisation sans deep learning, uniquement avec OpenCV. 
+Projet de traitement d'images, CY Tech, 2025.
+
+**Pipeline :** segmentation couleur en HSV → nettoyage morphologique → filtrage des blobs lumineux par circularité → détection du boîtier (rectangles sombres filtrés par surface et ratio) → association blob / boîtier.
+
+Interface Streamlit pour analyser les images et ajuster les paramètres en direct.
+
+![Aperçu](streamlit_screenshots/screenshot_1.png)
+
+**Stack :** Python · OpenCV · NumPy · Streamlit
 ## Installation
 
 Suivez ces étapes pour configurer le projet sur votre machine :
