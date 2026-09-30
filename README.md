@@ -10,39 +10,36 @@ Interface Streamlit pour analyser les images et ajuster les paramètres en direc
 ![Aperçu](streamlit_screenshots/screenshot_1.png)
 
 **Stack :** Python · OpenCV · NumPy · Streamlit
+
 ## Installation
 
-Suivez ces étapes pour configurer le projet sur votre machine :
+1. **Cloner le projet**
+```
+   git clone https://github.com/ilyas157/traffic-light-opencv.git
+   cd traffic-light-opencv
+```
 
-1.  **Récupérer le projet**
-    Téléchargez ou clonez les fichiers dans votre dossier de travail.
+2. **Créer un environnement virtuel**
+   * Windows :
+```
+     python -m venv venv
+     .\venv\Scripts\activate
+```
+   * macOS / Linux :
+```
+     python3 -m venv venv
+     source venv/bin/activate
+```
 
-2.  **Ouvrez un terminal dans le dossier du projet et exécutez** :
+3. **Installer les dépendances**
+```
+   pip install -r requirements.txt
+```
 
-    * **Sous Windows :**
-        ```
-        python -m venv venv
-        .\venv\Scripts\activate
-        ```
+Des images de test sont fournies dans `image/` ; vous pouvez y ajouter les vôtres.
 
-    * **Sous macOS / Linux :**
-        ```
-        python3 -m venv venv 
-        
-        source venv/bin/activate
-        ```
-
-3.  **Installer les dépendances**
-    ```
-    pip install opencv-python-headless numpy streamlit
-    ```
-4.  **Préparer les images**
-    Créez un dossier nommé `image/` à la racine du projet et placez-y vos photos de test .
-
-##  Lancement
-
-Pour démarrer l'application,lancez :
+## Lancement
 
 ```
 streamlit run main.py
- ```
+```
